@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+import Contact from './components/Contact';
 import './styles.css';
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
             <Navbar />
             
             <section id="home" className="section">
-                <h1>Welcome</h1>
+                <h1>Welcome!</h1>
                 {/* Add your hero content here */}
             </section>
 
@@ -32,10 +33,7 @@ function App() {
                 {/* Add resume download or embed here */}
             </section>
 
-            <section id="contact" className="section">
-                <h2>Contact</h2>
-                {/* Add contact form or contact information here */}
-            </section>
+            <Contact />
         </div>
     );
 }
