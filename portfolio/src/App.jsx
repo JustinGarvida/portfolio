@@ -1,32 +1,26 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Contact from './components/Contact';
+import About from './components/About';
+import Projects from './components/Projects';
 import './styles.css';
 
 function App() {
     return (
         <div className="App">
             <Navbar />
-            
-            <section id="home" className="section">
-                <h1>Welcome!</h1>
-                {/* Add your hero content here */}
-            </section>
 
-            <section id="about" className="section">
-                <h2>About Me</h2>
-                {/* Add your about content here */}
-            </section>
+            {/*Add Welcome Banner */}
 
-            <section id="Projects" className="section">
-                <h2>Projects</h2>
-                {/* Add your projects grid/list here */}
-            </section>
+            <About />
 
-            <section id="Experience" className="section">
-                <h2>Experience</h2>
+             <section id="Experience" className="section">
+            <h2>Experience</h2>
                 {/* Add your work/education experience here */}
             </section>
+
+            <Projects />
+
 
             <section id="resume" className="section">
                 <h2>Resume</h2>
