@@ -36,48 +36,6 @@ a:hover {
     color: white;
 }
 
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--primary-color);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    z-index: 1000;
-}
-
-.nav-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
-
-.nav-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    height: 60px;
-}
-
-.nav-items li {
-    margin: 0 1.5rem;
-}
-
-.nav-items a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-    font-family: 'Nero', Arial, sans-serif;
-}
-
-.nav-items a:hover {
-    color: white;
-}
-
 .hero {
     display: flex;
     flex-direction: column;

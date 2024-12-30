@@ -11,7 +11,6 @@ function App() {
             <Navbar />
 
             {/*Add Welcome Banner */}
-
             <About />
 
              <section id="Experience" className="section">
