@@ -1,3 +1,9 @@
-# PersonalWebsite
-Project Description: 
-This project is a personal website that displays all of the projects and the experience that I have accumulated in my computer science career!
+# Personal Portfolio Website
+## Project Description
+This personal website showcases all the projects and experiences accumulated throughout my computer science career, highlighting my skills and achievements!
+
+Want to view my project? Click the link below!
+XXXXX
+
+## Tech Stack
+To create this personal portfolio, I used React.js and TailwindCSS to create the components and the layout of this project. Because this was just a personal portfolio website, there is no backend portion for this project
