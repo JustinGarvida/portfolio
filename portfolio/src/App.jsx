@@ -1,9 +1,10 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import Contact from './components/Contact';
-import About from './components/About';
-import Projects from './components/Projects';
+import Contact from './pages/Contact';
+import About from './pages/About';
+import Projects from './pages/Projects';
 import './styles.css';
+import { Experience } from './pages/Experience';
 
 function App() {
     return (
@@ -13,10 +14,7 @@ function App() {
             {/*Add Welcome Banner */}
             <About />
 
-             <section id="Experience" className="section">
-            <h2>Experience</h2>
-                {/* Add your work/education experience here */}
-            </section>
+            <Experience/>
 
             <Projects />
 

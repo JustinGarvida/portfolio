@@ -4,7 +4,12 @@ function Navbar() {
   const handleScroll = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const navbarHeight = 60; // Adjust this value to match the height of your navbar
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY; // Get the position of the element
+      window.scrollTo({
+        top: elementPosition - navbarHeight, // Scroll to the element position minus the navbar height
+        behavior: 'smooth',
+      });
     }
   };
 
@@ -53,7 +58,7 @@ function Navbar() {
     <nav style={styles.navbar}>
       <div style={styles.navContent}>
         <ul style={styles.navItems}>
-          {['home', 'about', 'experience', 'projects', 'resume', 'contact'].map((section) => (
+          {['home', 'about', 'experience', 'Projects', 'resume', 'contact'].map((section) => (
             <li key={section} style={styles.navItem}>
               <button
                 style={styles.button}
