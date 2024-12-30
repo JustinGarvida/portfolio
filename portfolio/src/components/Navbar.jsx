@@ -58,7 +58,7 @@ function Navbar() {
     <nav style={styles.navbar}>
       <div style={styles.navContent}>
         <ul style={styles.navItems}>
-          {['home', 'about', 'experience', 'Projects', 'resume', 'contact'].map((section) => (
+          {['about me', 'experience', 'Projects', 'resume', 'contact'].map((section) => (
             <li key={section} style={styles.navItem}>
               <button
                 style={styles.button}
