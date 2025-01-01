@@ -2,7 +2,7 @@ import React from 'react';
 
 const Welcome = () => {
   return (
-    <section id="about me" className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8"> {/* Grid layout for responsiveness */}
+    <section id="about-me" className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8"> {/* Grid layout for responsiveness */}
       <img
         src={require('../images/justin_linkedin.jpeg')}
         alt="Justin Garvida"
