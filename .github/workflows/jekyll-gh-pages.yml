@@ -21,19 +21,31 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '16'  # Set this to your React project's Node.js version
+
+      - name: Install and Build React App
+        run: |
+          cd portfolio/src
+          npm install
+          npm run build
+        working-directory: portfolio/src
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./portfolio  # Specify that the source directory is 'portfolio'
-          destination: ./portfolio/_site  # Output the built site to 'portfolio/_site'
+          source: ./portfolio
+          destination: ./portfolio/_site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: portfolio/_site  # Specify the path to the artifact to be uploaded
+          path: portfolio/_site
 
   deploy:
     environment:
@@ -45,4 +57,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
