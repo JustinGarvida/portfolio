@@ -10,7 +10,6 @@ export default function Timeline({ defaultColor }) {
 
         return (
           <div key={element.id} className="flex m-4 relative">
-            {/* Connecting line for each element */}
             {index > 0 && (
               <div
                 className={`${color} w-0.5 h-16 absolute left-1/2 transform -translate-x-1/2 top-0`}
