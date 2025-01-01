@@ -1,26 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false); 
+
   const handleScroll = (id) => {
+    setIsOpen(false); 
     const element = document.getElementById(id);
     if (element) {
-      const navbarHeight = 60; // Adjust this value to match the height of your navbar
-      const elementPosition = element.getBoundingClientRect().top + window.scrollY; // Get the position of the element
+      const navbarHeight = 60; 
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY; 
       window.scrollTo({
-        top: elementPosition - navbarHeight, // Scroll to the element position minus the navbar height
-        behavior: 'smooth',
+        top: elementPosition - navbarHeight, 
       });
     }
   };
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-primary shadow-md z-50">
-      <div className="max-w-5xl mx-auto px-4">
-        <ul className="flex justify-center items-center list-none m-0 p-0 h-15 lg:h-20">
+      <div className="w-full flex justify-center items-center px-4 h-15 lg:h-20">
+        <button onClick={() => setIsOpen(!isOpen)} className="text-yellow-500 lg:hidden z-30">
+          {/* Icon for menu toggle */}
+          <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        <ul className={`flex flex-col lg:flex-row justify-center items-center list-none m-0 p-0 bg-primary w-full absolute lg:static transition-all duration-300 ease-in-out ${isOpen ? 'top-15' : 'top-[-1000px]'}`}>
           {['about me', 'experience', 'Projects', 'resume', 'contact'].map((section) => (
-            <li key={section} className="mx-6">
+            <li key={section} className="mx-6 my-2 lg:my-0">
               <h2
-                className="text-secondary text-lg lg:text-xl font-bold cursor-pointer hover:text-white transition-colors duration-300"
+                className="text-yellow-500 text-lg lg:text-xl font-bold cursor-pointer hover:text-opacity-80"
                 onClick={() => handleScroll(section)}
               >
                 {section.charAt(0).toUpperCase() + section.slice(1)}
