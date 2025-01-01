@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/PersonalWebsite/static/css/main.c79705a6.css",
-    "main.js": "/PersonalWebsite/static/js/main.e5f81137.js",
-    "static/media/philly_search.png": "/PersonalWebsite/static/media/philly_search.f540e331d6cc69353724.png",
-    "static/media/Nero.ttf": "/PersonalWebsite/static/media/Nero.f79ef1dffe840edc8047.ttf",
-    "static/media/justin_linkedin.jpeg": "/PersonalWebsite/static/media/justin_linkedin.53ef69c30b0a19809077.jpeg",
-    "static/media/school.svg": "/PersonalWebsite/static/media/school.a41655f6d5350015803153c7410cef6a.svg",
-    "static/media/work.svg": "/PersonalWebsite/static/media/work.3710b62484ed638074240e99317c6c60.svg",
-    "index.html": "/PersonalWebsite/index.html",
-    "main.c79705a6.css.map": "/PersonalWebsite/static/css/main.c79705a6.css.map",
-    "main.e5f81137.js.map": "/PersonalWebsite/static/js/main.e5f81137.js.map"
+    "main.css": "/static/css/main.63d7f942.css",
+    "main.js": "/static/js/main.f50fdd2d.js",
+    "static/media/philly_search.png": "/static/media/philly_search.f540e331d6cc69353724.png",
+    "static/media/Nero.ttf": "/static/media/Nero.f79ef1dffe840edc8047.ttf",
+    "static/media/justin_linkedin.jpeg": "/static/media/justin_linkedin.53ef69c30b0a19809077.jpeg",
+    "static/media/school.svg": "/static/media/school.a41655f6d5350015803153c7410cef6a.svg",
+    "static/media/work.svg": "/static/media/work.3710b62484ed638074240e99317c6c60.svg",
+    "index.html": "/index.html",
+    "main.63d7f942.css.map": "/static/css/main.63d7f942.css.map",
+    "main.f50fdd2d.js.map": "/static/js/main.f50fdd2d.js.map"
   },
   "entrypoints": [
-    "static/css/main.c79705a6.css",
-    "static/js/main.e5f81137.js"
+    "static/css/main.63d7f942.css",
+    "static/js/main.f50fdd2d.js"
   ]
 }
