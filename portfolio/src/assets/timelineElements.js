@@ -26,7 +26,7 @@ const timelineElements = [
   },
   {
     id: 2,
-    title: "Data Operations Associate",
+    title: "Data Operations Intern",
     location: "DemandScience",
     description: [
       "Enhanced a company email workflow by implementing SQL filters with specific taxonomy rules to automatically filter inactive employee accounts from a client database.",
