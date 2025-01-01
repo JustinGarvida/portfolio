@@ -1,45 +1,41 @@
 name: CI and Deployment to GitHub Pages
 
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  # Also allows manual triggering from the Actions tab
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  id-token: write 
+
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest  # Specifies the type of machine to run the job on, here using the latest Ubuntu version
-
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
-        # Checks out a copy of your repository under $GITHUB_WORKSPACE, so your job can access it
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '16'
-        # Sets up a Node.js environment with the specified version, here it's Node.js 16
 
       - name: Install Dependencies
         run: npm install
         working-directory: portfolio
-        # Runs npm install in the 'portfolio' directory to install dependencies
 
       - name: Build
         run: npm run build
         working-directory: portfolio
-        # Builds your project by running 'npm run build' within the 'portfolio' directory
 
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v3
         with:
           name: site-artifact
           path: portfolio/build/
-        # Uploads the build directory as an artifact, which can be used by other jobs or retained for later use
 
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -47,5 +43,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           path: portfolio/build/
-        # Deploys the artifact to GitHub Pages. This step only runs on pushes to the 'main' branch.
 
