@@ -3,6 +3,7 @@
 This personal website showcases all the projects and experiences accumulated throughout my computer science career, highlighting my skills and achievements!
 
 Want to view my project? Click the link below!
+
 https://justingarvida.github.io/portfolio/
 
 ## Tech Stack
