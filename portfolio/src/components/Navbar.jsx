@@ -72,7 +72,7 @@ function Navbar() {
                 }`
           } justify-center items-center list-none m-0 p-0 lg:static`}
         >
-          {["about-me", "experience", "Projects", "resume", "contact"].map(
+          {["about-me", "experience", "Projects", "contact"].map(
             (section) => (
               <li key={section} className="mx-6 my-2 lg:my-0">
                 <h2
