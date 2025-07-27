@@ -6,128 +6,141 @@
   font-display: swap;
 }
 
+/* ========== Root Theme Colors ========== */
 :root {
-    --primary-color: #552583;
-    --secondary-color: #FDB927;
+  --primary-color: #552583;   /* Purple */
+  --secondary-color: #FDB927; /* Gold */
 }
 
+/* ========== Google Fonts ========== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
 
+/* ========== Global Resets ========== */
+html {
+  scroll-padding-top: 80px; /* Prevent sections from hiding under fixed navbar */
+}
+
 body {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    font-family: 'Inter', Arial, sans-serif;
-    padding-top: 60px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
 }
 
 h1, h2, h3 {
-    color: var(--secondary-color);
-    font-family: 'Nero', Arial, sans-serif;
+  color: var(--secondary-color);
+  font-family: 'Nero', Arial, sans-serif;
+  margin: 0;
 }
 
 a {
-    color: var(--secondary-color);
-    text-decoration: none;
+  color: var(--secondary-color);
+  text-decoration: none;
 }
 
 a:hover {
-    color: white;
+  color: white;
 }
 
+/* ========== Hero Section ========== */
 .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .hero-text {
-    font-size: 4rem;
-    margin-bottom: 1rem;
+  font-size: 4rem;
+  margin-bottom: 1rem;
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .hero-cta .cta-button {
-    padding: 1rem 2rem;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    border-radius: 5px;
-    transition: all 0.3s ease;
+  padding: 1rem 2rem;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 .hero-cta .cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* ========== Section Headings ========== */
 .section h1,
 .section h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    padding-top: 2rem;
-    font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
 }
 
-/* Contact Section Styling */
-
+/* ========== Contact Section ========== */
 .contact-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .contact-text {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .contact-text p {
-    font-size: 1.2rem;
-    line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
+/* ========== Social Links ========== */
 .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
 }
 
 .social-links a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.3s ease;
-}
-
-.social-icon {
-    font-size: 2rem;  /* Adjust size as needed */
-    margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
 }
 
 .social-links a:hover {
-    transform: translateY(-5px);
-    color: white;
+  transform: translateY(-5px);
+  color: white;
+}
+
+.social-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .social-links span {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
+/* ========== Typography ========== */
 p, span, li, a {
-    font-family: 'Inter', Arial, sans-serif;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    font-weight: 400;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 .emphasized-text {
-    font-weight: 500;
+  font-weight: 500;
+}
+
+
+nav {
+  z-index: 9999 !important;
 }
