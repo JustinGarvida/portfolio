@@ -144,3 +144,22 @@ p, span, li, a {
 nav {
   z-index: 9999 !important;
 }
+
+/* ========== Resume Download Button ========== */
+.resume-download-button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  border: none;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.resume-download-button:hover {
+  background-color: white;
+  color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
