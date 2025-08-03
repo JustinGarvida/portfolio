@@ -67,7 +67,7 @@ function Navbar() {
                 }`
           } justify-center items-center list-none m-0 p-0 lg:static`}
         >
-          {["justin-garvida", "about-me", "experience", "Projects", "contact"].map((section) => (
+          {["justin-garvida", "about-me", "experience", "Projects", "Resume", "contact"].map((section) => (
             <li key={section} className="mx-6 my-2 lg:my-0">
               <h2
                 onClick={() => handleScroll(section)}
